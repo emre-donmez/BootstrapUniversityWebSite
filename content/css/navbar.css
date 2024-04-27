@@ -1,45 +1,128 @@
-html, body { 
-	height: 100%; 
-	font-family: 'Ubuntu', sans-serif; 
-} 
+ :root {
+   --header-height: 15vh;
+   --main-height: 89vh;
+   --bg-color: #ffffff;
+   --main-text-color: #000000d2;
+   --secondary-text-color: #911d0e;
+ }
 
-.gfg { 
-	height: 50px; 
-	width: 50px; 
+ header {
+   background-color: var(--bg-color);
+   color: var(--main-text-color);
+   height: var(--header-height);
+   border-bottom-color: var(--secondary-text-color);
+   border-bottom-style: solid;
+   display: flex;
+   position: sticky;
+   justify-content: center;
+   align-items: center;
+   padding: 1vh 0 0 1vh;
+ }
 
-} 
+ svg {
+   fill: var(--main-text-color);
+ }
 
-.mynav { 
-	color: #fff; 
-} 
+ svg {
+   transition: color 0.2s, transform 0.2s, opacity 0.2s;
+ }
 
-.mynav li a { 
-	color: #fff; 
-	text-decoration: none; 
-	width: 100%; 
-	display: block; 
-	border-radius: 5px; 
-	padding: 8px 5px; 
-} 
+ svg:hover {
+   fill: var(--secondary-text-color);
+   transform: scale(1.2);
+   opacity: 0.9;
+ }
 
-.mynav li a.active { 
-	background: rgba(255, 255, 255, 0.2); 
-} 
+ .navbar {
+   background-color: var(--bg-color);
+   color: var(--main-text-color);
+   height: var(--main-height);
+   position: sticky;
+   top: var(--header-height);
+ }
 
-.mynav li a:hover { 
-	background: rgba(255, 255, 255, 0.2); 
-} 
+ .nav-link {
+   color: var(--main-text-color);
+   transition: color 0.2s, transform 0.2s, opacity 0.2s;
+ }
 
-.mynav li a i { 
-	width: 25px; 
-	text-align: center; 
-} 
+ .nav-link:hover {
+   color: var(--secondary-text-color) !important;
+   transform: scale(1.1);
+   opacity: 0.9;
+ }
 
-.notification-badge { 
-	background-color: rgba(255, 255, 255, 0.7); 
-	float: right; 
-	color: #222; 
-	font-size: 14px; 
-	padding: 0px 8px; 
-	border-radius: 2px; 
+ .student-item:hover .d-none {
+   display: block !important;
+   animation: show-submenu 0.3s ease-in-out forwards;
+ }
+
+ .social-icon {
+   color: var(--secondary-text-color);
+ }
+
+ .nav-active {
+   color: var(--secondary-text-color) !important;
+   transform: scale(1.1) !important;
+ }
+
+ .btn:focus {
+   box-shadow: none;
+ }
+
+ #nav-main-container {
+   height: var(--main-height);
+   position: absolute;
+   top: var(--header-height);
+ }
+
+ footer {
+  position: relative !important;
+  bottom: 0;
+  width: 100%;
+  background-color: var(--bg-color);
+  color: var(--main-text-color);
+  padding: 20px 0;  
+ }
+ 
+ @keyframes show-submenu {
+  from {
+    opacity: 0;
+    transform: translateY(-3.5vh);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
+
+ @media (max-width: 767px) {
+   .navbar {
+     position: static;
+     width: 100%;
+     height: auto;
+   }
+
+   footer {
+     position: static;
+     width: auto;
+   }
+
+   header {
+     padding-top: 2vh;
+   }
+
+   #nav-main-container {
+     height: 87vh;
+   }
+
+   .nav-link {
+     text-align: center;
+   }
+
+   .nav-link:hover {
+     transform: scale(1.4);
+     text-align: center;
+   }
+ }

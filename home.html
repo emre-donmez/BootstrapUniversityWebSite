@@ -1,23 +1,228 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home - ESTU</title>
+  <link rel="icon" type="image/png" sizes="16x16" href="/resources/images/favicon-estu.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/content/css/navbar.css" />
+  <link rel="stylesheet" href="/content/css/home.css" />
 </head>
+
 <body>
-    <div w3-include-html="navbar.html"></div>
-    <div class="col d-flex flex-column h-sm-100">
-        <main class="row overflow-auto">
-            <div class="col pt-4">
-                <h3>Vertical Sidebar that switches to Horizontal Navbar</h3>
-                <p class="lead">An example multi-level sidebar with collasible menu items. The menu functions like an "accordion" where only a single menu is be open at a time.</p>
-                <hr />
-                <h3>More content...</h3>
-                <p>Sriracha biodiesel taxidermy organic post-ironic, Intelligentsia salvia mustache 90's code editing brunch. Butcher polaroid VHS art party, hashtag Brooklyn deep v PBR narwhal sustainable mixtape swag wolf squid tote bag. Tote bag cronut semiotics, raw denim deep v taxidermy messenger bag. Tofu YOLO Etsy, direct trade ethical Odd Future jean shorts paleo. Forage Shoreditch tousled aesthetic irony, street art organic Bushwick artisan cliche semiotics ugh synth chillwave meditation. Shabby chic lomo plaid vinyl chambray Vice. Vice sustainable cardigan, Williamsburg master cleanse hella DIY 90's blog.</p>
-                <p>Ethical Kickstarter PBR asymmetrical lo-fi. Dreamcatcher street art Carles, stumptown gluten-free Kickstarter artisan Wes Anderson wolf pug. Godard sustainable you probably haven't heard of them, vegan farm-to-table Williamsburg slow-carb readymade disrupt deep v. Meggings seitan Wes Anderson semiotics, cliche American Apparel whatever. Helvetica cray plaid, vegan brunch Banksy leggings +1 direct trade. Wayfarers codeply PBR selfies. Banh mi McSweeney's Shoreditch selfies, forage fingerstache food truck occupy YOLO Pitchfork fixie iPhone fanny pack art party Portland.</p>
+  <div class="container-fluid">
+    <div class="row">
+      <header class="col-12">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-2"></div>
+            <div class="col-8 text-center">
+              <img src="/resources/images/estu_logo_vektorel.svg" alt="Eskişehir Technical University Logo"
+                style="max-height: calc(var(--header-height) - 2vh); max-width: 100%;">
             </div>
-        </main>          
+            <button class="btn d-md-none col-2" type="button" data-bs-toggle="collapse" data-bs-target="#side-nav"
+              aria-controls="side-nav" aria-expanded="false" aria-label="Toggle navigation">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" id="menu-icon" height="32" fill="currentColor"
+                class="bi bi-list" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </header>
     </div>
+    <div class="row">
+      <nav
+        class="navbar navbar-expand-md col-12 col-md-2 d-md-block pt-2 ps-2 navbar-light align-items-start fixed-top">
+        <div id="side-nav" class="collapse navbar-collapse">
+          <ul class="navbar-nav flex-column ms-1 ms-md-1 ms-lg-4 mt-md-2 align-items-center align-items-md-start">
+            <li class="nav-item">
+              <a class="nav-link h5 nav-active" href="home.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link h5" href="university.html">University</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link h5" href="academics.html">Academics</a>
+            </li>
+            <li class="nav-item student-item">
+              <a class="nav-link h5" href="students.html">Students</a>
+              <div class="d-none">
+                <a class="nav-link h5" href="login.html">Login</a>
+                <a class="nav-link h5" href="documents.html">Documents</a>
+              </div>
+            </li>
+            <li>
+              <a class="nav-link h5" href="campuslife.html">Campus Life</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <main class="col-12 col-md-10 ">
+        <div class="container">
+          <div class="row">
+            <section class="mt-3">
+              <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="/resources/images/slide-0.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="/resources/images/slider-1.jpeg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="/resources/images/slider-2.jpeg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="/resources/images/slider-3.jpeg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="/resources/images/slider-4.jpeg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="resources/images/slider-5.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="/resources/images/slider-6.jpeg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="/resources/images/slider-7.jpeg" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                  data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                  data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </section>
+            <section class="mt-3">
+              <div class="row justify-content-center">
+                <div class="col-md-8 text-center">
+                  <h4 class="mb-4" id="announcement-title"><i class="fas fa-bullhorn"></i> Üniversite Duyuruları</h1>
+                </div>
+              </div>
+              <div class="card-deck">
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title"><a
+                        href="https://www.eskisehir.edu.tr/tr/Duyuru/Detay/ogrencilerimizin-dikkatine-estu-ford-otosan-yazilim-ofisi-takim-uyesi-adaylari-araniyor">Attention
+                        Students: ESTU Ford Otosan Software Office Team Members Needed</a></h5>
+                    <p class="card-text">ESTU Ford Otosan Software Office is looking for team member candidates.
+                      Announcement of contract personnel recruitment...</p>
+                    <p class="card-text"><small class="text-muted">April 25, 2024 19:37:33</small></p>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title"><a
+                        href="https://www.eskisehir.edu.tr/tr/Duyuru/Detay/sozlesmeli-personel-alim-ilani-sonuclari-2">Contract
+                        Personnel Recruitment Announcement Results</a></h5>
+                    <p class="card-text">Results of contract personnel recruitment announcement have been published...
+                    </p>
+                    <p class="card-text"><small class="text-muted">April 24, 2024 15:55:33</small></p>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title"><a
+                        href="https://www.eskisehir.edu.tr/tr/Duyuru/Detay/18-mart-sehitler-gunu-idari-izin-duyurusu-">Administrative
+                        Leave Announcement for March 18th Martyrs Day</a></h5>
+                    <p class="card-text">According to the circular published in the Official Gazette dated October 15,
+                      2005 and numbered 25967...</p>
+                    <p class="card-text"><small class="text-muted">March 15, 2024 11:06:13</small></p>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title"><a
+                        href="https://www.eskisehir.edu.tr/tr/Duyuru/Detay/2023-2024-akademik-yili-bahar-donemi-ortak-kodlu-derslerin-sinav-takvimine-iliskin-duyuru">Announcement
+                        Regarding Exam Schedule of Common-Coded Courses for 2023-2024
+                        Academic Year Spring Semester</a></h5>
+                    <p class="card-text">Announcement about the exam schedule of common-coded courses for the 2023-2024
+                      academic year spring semester.</p>
+                    <p class="card-text"><small class="text-muted">March 15, 2024 09:44:40</small></p>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title"><a
+                        href="https://www.eskisehir.edu.tr/tr/Duyuru/Detay/ogrencilerimizin-dikkatine-estu-ford-otosan-akademi-basliyor-">Important!
+                        Vocational School and Vocational High School Students Announcement
+                        for Vocational Training at Ford Otosan Plant</a></h5>
+                    <p class="card-text">Announcement for vocational training at Ford Otosan Plant for Vocational School
+                      and Vocational High School students...</p>
+                    <p class="card-text"><small class="text-muted">March 6, 2024 12:53:34</small></p>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title"><a
+                        href="https://www.eskisehir.edu.tr/tr/Duyuru/Detay/ogrencilerimizin-dikkatine-estu-teknotam-akademi-basliyor">Attention
+                        Students: ESTU-TEKNOTAM Academy Starting</a></h5>
+                    <p class="card-text">Coding your future with the technology of the new era!...</p>
+                    <p class="card-text"><small class="text-muted">March 5, 2024 22:47:45</small></p>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title"><a
+                        href="https://www.eskisehir.edu.tr/tr/Duyuru/Detay/ogrencilerimizin-dikkatine-estu-baycan-elektrik-akademi-programi-basliyor">Attention
+                        Students: ESTU-Baycan Electric Academy Program Starting!</a></h5>
+                    <p class="card-text">ESTU-Baycan Electric Academy Program is starting! Applications are open...</p>
+                    <p class="card-text"><small class="text-muted">March 1, 2024 19:27:33</small></p>
+                  </div>
+                </div>
+
+
+            </section>
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>
+  <footer class="fixed-bottom">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 text-center">
+          <a href="https://www.facebook.com/eskisehirteknikuniv" class="social-icon" target="_blank"><i
+              class="fab fa-facebook fa-2x"></i></a>
+          <a href="https://twitter.com/esteknikuniv" class="social-icon" target="_blank"><i
+              class="fab fa-twitter fa-2x"></i></a>
+          <a href="https://www.instagram.com/eskisehirteknikuniv/" class="social-icon" target="_blank"><i
+              class="fab fa-instagram fa-2x"></i></a>
+          <a href="https://tr.linkedin.com/school/eskisehirteknikuniv/" class="social-icon" target="_blank"><i
+              class="fab fa-linkedin fa-2x"></i></a>
+          <a href="https://www.youtube.com/channel/UC-oGylb9E16KNqMnTP_kDoA" class="social-icon" target="_blank"><i
+              class="fab fa-youtube fa-2x"></i></a>
+        </div>
+      </div>
+      <div class="row justify-content-center mt-3">
+        <div class="col-12 text-center">
+          <span class="text-muted">2024 © All rights reserved. Eskisehir Technical University</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>
