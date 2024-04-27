@@ -1,0 +1,30 @@
+:root {
+    --main-color: #911d0e;
+}
+
+.card {
+    border-radius: 20px;
+}
+
+.card-header {
+    background-color: var(--main-color);
+    color: #fff;
+    border-radius: 20px 20px 0 0;
+}
+
+.card-body {
+    padding: 30px;
+}
+
+#btn-login {
+    display: block;
+    width: 100%;
+    margin-top: 2vh;
+    background-color: var(--main-color);
+    border-radius: 20px;
+    color: #fff;
+}
+
+#btn-login {
+    background-color: var(--main-color);
+}

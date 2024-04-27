@@ -1,0 +1,158 @@
+:root {
+    --text-color: #911d0e;
+  }
+  #polices-title{
+    color: var(--text-color);
+  }
+#about-us-title{
+    margin-left: -1.8vh;
+}
+.transparent-hover {
+    transition: opacity 0.5s ease-in-out;
+  }
+
+  .transparent-hover:hover {
+    opacity: 0.5; 
+  }
+
+  .img-fluid {
+    max-width: 100%; 
+    height: auto;
+  }
+  #program-info-section, #student-info-section, #other-info-section {
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 30px;
+  }
+
+  #program-info-section h2, #student-info-section h2, #other-info-section h2 {
+    color: var(--text-color);
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+
+  .info-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+
+  .info-row p {
+    font-size: 16px;
+    color: #343a40;
+    margin: 0;
+  }
+
+  .info-label {
+    font-weight: bold;
+  }
+
+  @media (max-width: 576px) {
+    #program-info-section, #student-info-section, #other-info-section {
+      padding: 15px;
+    }
+
+    #program-info-section h2, #student-info-section h2, #other-info-section h2 {
+      font-size: 20px;
+    }
+
+    .info-row {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .info-row p {
+      font-size: 14px;
+    }
+  }
+
+  article {
+    margin-bottom: 3rem;
+    position: relative;
+}
+
+article:before,
+article:after {
+    content: "";
+    display: table;
+}
+
+article:after {
+    clear: both;
+}
+
+article figure {
+    float: left;
+    width: 32.5%;
+}
+
+article section:first-of-type {
+    float: right;
+    width: 62.5%;
+}
+
+article section:last-of-type {
+    display: none;
+    visibility: hidden;
+}
+
+section {
+    -webkit-transition: .125s linear;
+    -moz-transition: .125s linear;
+    -ms-transition: .125s linear;
+    -o-transition: .125s linear;
+    transition: .125s linear;
+}
+
+input[type=checkbox] {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+}
+
+[for="read_more"] {
+    position: absolute;
+    bottom: -3rem;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: .65rem;
+    box-shadow: inset 1px 1px rgba(0, 0, 0, 0.1), inset -1px -1px rgba(0, 0, 0, 0.1);
+}
+
+[for="read_more"]:hover {
+    background: rgba(0, 0, 0, .5);
+    color: rgb(255, 255, 255);
+}
+
+[for="read_more"] span:last-of-type {
+    display: none;
+    visibility: hidden;
+}
+
+input[type=checkbox]:checked~section {
+    display: block;
+    visibility: visible;
+    width: 100%;
+}
+
+input[type=checkbox]:checked~figure {
+    width: 100%;
+}
+
+input[type=checkbox]:checked~[for="read_more"] span:first-of-type {
+    display: none;
+    visibility: hidden;
+}
+
+input[type=checkbox]:checked~[for="read_more"] span:last-of-type {
+    display: block;
+    visibility: visible;
+}

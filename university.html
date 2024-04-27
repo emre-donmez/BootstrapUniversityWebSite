@@ -4,12 +4,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Home - ESTU</title>
+  <title>University - ESTU</title>
   <link rel="icon" type="image/png" sizes="16x16" href="/resources/images/favicon-estu.png">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
   <link rel="stylesheet" href="/content/css/navbar.css" />
+  <link rel="stylesheet" href="/content/css/university.css" />
 </head>
 
 <body>
@@ -41,10 +42,10 @@
         <div id="side-nav" class="collapse navbar-collapse">
           <ul class="navbar-nav flex-column ms-1 ms-md-1 ms-lg-4 mt-md-2 align-items-center align-items-md-start">
             <li class="nav-item">
-              <a class="nav-link h5 nav-active" href="home.html">Home</a>
+              <a class="nav-link h5" href="home.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link h5" href="university.html">University</a>
+              <a class="nav-link h5 nav-active" href="university.html">University</a>
             </li>
             <li class="nav-item">
               <a class="nav-link h5" href="academics.html">Academics</a>
@@ -62,54 +63,244 @@
           </ul>
         </div>
       </nav>
-      <main class="col-12 col-md-10 ">
+      <main class="col-12 col-md-10">
         <div class="container">
           <div class="row">
-            <section class="mt-3">
-              <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img src="/resources/images/slider-1.jpeg" class="d-block w-100" alt="...">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="/resources/images/slider-2.jpeg" class="d-block w-100" alt="...">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="/resources/images/slider-3.jpeg" class="d-block w-100" alt="...">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="/resources/images/slider-4.jpeg" class="d-block w-100" alt="...">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="resources/images/slider-5.jpg" class="d-block w-100" alt="...">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="/resources/images/slider-6.jpeg" class="d-block w-100" alt="...">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="/resources/images/slider-7.jpeg" class="d-block w-100" alt="...">
-                  </div>
+            <div class="container mt-5">
+              <div class="row justify-content-center">
+                <div class="col-md-8">
+                  <img src="resources/images/university.jpeg" class="img-fluid rounded transparent-hover"
+                    alt="Üniversite Resmi">
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
-                  data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
-                  data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
               </div>
-            </section>
-            <section class="mt-3">
-              <h2>Welcome to our website!</h2>
-              <p>This is where you can find all the information about our university.</p>
-            </section>
+            </div>
           </div>
+          <div class="row">
+            <section class="mt-3">
+              <h4 id="about-us-title"> About Us</h1>
+                <div class="row">
+                  The Eskişehir Technical University, established by Law No. 7141 published in the Official News dated
+                  May 18, 2018, is located in the center of Eskişehir, a city known for its science, culture, and
+                  vibrant
+                  youth. It consists of 5 faculties, 2 vocational schools, 1 college, 3 institutes, and 6 research and
+                  application centers spread across 3 campuses. With a strong infrastructure for conducting educational,
+                  instructional, and research activities, the university strives to prepare its students as the most
+                  competent and competitive individuals for the future. With a proficient faculty dedicated to staying
+                  updated with advancements in their fields and sharing their knowledge with students, the university
+                  creates dynamic and creative learning environments. Additionally, our Aviation and Space Sciences
+                  Faculty operates the international Hasan Polatkan Airport located at the 2 September Campus, where
+                  various international flights are conducted by different airlines on different days of the week.
+                </div>
+          </div>
+          </section>
+          <section class="mt-3">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-4">
+                  <section id="program-info-section" class="mt-3">
+                    <h2 class="mb-4">Program Information</h2>
+                    <div class="info-row">
+                      <p class="info-label">Associate Degree:</p>
+                      <p>17</p>
+                    </div>
+                    <div class="info-row">
+                      <p class="info-label">Undergraduate:</p>
+                      <p>30</p>
+                    </div>
+                    <div class="info-row">
+                      <p class="info-label">Master's:</p>
+                      <p>179</p>
+                    </div>
+                    <div class="info-row">
+                      <p class="info-label">Doctorate:</p>
+                      <p>79</p>
+                    </div>
+                  </section>
+                </div>
+                <div class="col-md-4">
+                  <section id="student-info-section" class="mt-3">
+                    <h2 class="mb-4">Student Information</h2>
+                    <div class="info-row">
+                      <p class="info-label">Associate Degree Students:</p>
+                      <p>3238</p>
+                    </div>
+                    <div class="info-row">
+                      <p class="info-label">Undergraduate Students:</p>
+                      <p>9203</p>
+                    </div>
+                    <div class="info-row">
+                      <p class="info-label">Master's Students:</p>
+                      <p>2000</p>
+                    </div>
+                    <div class="info-row">
+                      <p class="info-label">Doctorate Students:</p>
+                      <p>641</p>
+                    </div>
+                  </section>
+                </div>
+                <div class="col-md-4">
+                  <section id="other-info-section" class="mt-3">
+                    <h2 class="mb-4">Teaching Information</h2>
+                    <div class="info-row">
+                      <p class="info-label">Classrooms:</p>
+                      <p>650+</p>
+                    </div>
+                    <div class="info-row">
+                      <p class="info-label">Teaching Program:</p>
+                      <p>130+</p>
+                    </div>
+                    <div class="info-row">
+                      <p class="info-label">Semester Courses:</p>
+                      <p>4000+</p>
+                    </div>
+                  </section>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="mt-3">
+            <h1 class="mb-3" id="polices-title">Our Policies</h1>
+            <div class="container">
+              <h2 class="ms-4 mb-2">Quality Policy</h2>
+              <ul>
+                <li>To ensure the sustainable performance of our university, manage processes in line with
+                  strategies considering stakeholder expectations and requirements, and continuously improve.</li>
+                <article>
+                  <input type="checkbox" id="read_more" role="button">
+                  <label for="read_more" onclick=""><span>Read More</span><span>Read Less</span></label>
+                  <section>
+                    <li>Develop a culture of quality focused on continuous learning, improvement, and innovation.</li>
+                    <li>Based on the standards of the Higher Education Quality Board, establish specific standards for
+                      our university aligned with our mission and objectives using the new EFQM approach.</li>
+                    <li>Establish and implement an internal quality assurance system that ensures the closure of PDCA
+                      cycles (Plan-Do-Check-Act) covering all activities of quality assurance, including education,
+                      research, community service, internationalization, and governance.</li>
+                    <li>Establish an integrated quality assurance organizational structure covering internal/external
+                      evaluation and accreditation processes for all areas of activity at the university beyond the
+                      framework defined by national legislation.</li>
+                    <h2 class="mt-3">Education Policy</h2>
+                    <li>As a university focused on technical fields, conduct education, teaching, and research
+                      activities
+                      interactively.</li>
+                    <li>Ensure compliance of all associate, undergraduate, and graduate programs within our internal
+                      quality
+                      assurance system with national and/or international accreditation criteria.</li>
+                    <li>Create and maintain a student-centered and competency-based education ecosystem by enhancing our
+                      capabilities in learning, teaching, and assessment dimensions to sustainably support students and
+                      graduates.</li>
+                    <li>Support face-to-face education with distance learning methods and information technologies.</li>
+                    <li>Balance the ratio of undergraduate/graduate students by increasing the number of graduate
+                      programs
+                      and students.</li>
+                    <h2 class="mt-3">Research Policy</h2>
+                    <li>As a research-focused university, conduct education, teaching, and research activities
+                      interactively
+                      in all processes.</li>
+                    <li>Prioritize the research competencies of faculty members in appointment-promotion and performance
+                      evaluation processes.</li>
+                    <li>Develop and implement an interactive, output- and impact-focused research management ecosystem
+                      that
+                      encompasses all components of the research process.</li>
+                    <li>Conduct research focusing on business and international collaboration to produce valuable
+                      research
+                      outputs.</li>
+                    <li>Conduct research focusing on identified priority areas and sustainability.</li>
+                    <li>Ensure that the research culture is embraced by academic staff as a lifestyle.</li>
+                    <h2 class="mt-3">Community Service Policy</h2>
+                    <li>Manage the university's knowledge and research capabilities to support entrepreneurship and
+                      societal development.</li>
+                    <li>Utilize the university's resources and capabilities to introduce science to society, enhance
+                      awareness, and foster appreciation.</li>
+                    <h2 class="mt-3">Governance Policy</h2>
+                    <li>Adopt a management style that fosters a culture of co-management, considers performance, and
+                      adheres to agile governance principles.</li>
+                    <li>Manage potential risks arising from rapidly changing, uncertain, and complex environments with
+                      our institutional capacity and corporate agility.</li>
+                    <li>Develop a corporate organizational structure that meets the requirements of
+                      institutionalization, with all roles, authorities, and responsibilities clearly defined, focused
+                      on horizontal structuring, open to development, and based on solid foundations, promoting
+                      flexibility and innovation.</li>
+                    <li>Embrace a transparent, accountable, and participatory management approach within the framework
+                      of universal ethical values; inform the public about all university activities openly, accurately,
+                      timely, and accessibly.</li>
+                    <li>Motivate and continuously develop employees, reward success, strengthen representation and sense
+                      of belonging, be accessible, and improve effective communication mechanisms.</li>
+                    <li>Provide a safe and healthy living environment for students, employees, and all stakeholders,
+                      establish sustainable eco-campus infrastructure, and create an integrated disaster and emergency
+                      management system on campuses.</li>
+                    <li>Increase self-generated revenues to ensure the sustainability of core activities.</li>
+                    <h2 class="mt-3">Internationalization Policy</h2>
+                    <li>Establish an organizational structure and implement incentive mechanisms for conducting
+                      education, teaching, research, and community service activities through international
+                      collaborations.</li>
+                    <li>Increase the number of double and joint degree programs within the framework of the
+                      international approach of the curriculum.</li>
+                    <li>Encourage participation in international networks and organizations to expand the international
+                      cooperation network.</li>
+                    <h2 class="mt-3">Gender Equality Policy</h2>
+                    <li>Conduct studies to raise awareness about gender equality, carry out planned activities for the
+                      adoption of this culture by all stakeholders, and share its efforts with the community to develop
+                      awareness.</li>
+                    <li>Commit to conducting gender equality improvement efforts under the leadership of its top
+                      management.</li>
+                    <li>Commit to the guiding principle of gender equality and inclusivity in our fundamental activities
+                      defined as education-teaching, research-development, and community service, as well as in all our
+                      managerial processes.</li>
+                    <li>Commit to providing an inclusive, respectful, and developmental working environment for all
+                      female and male employees.</li>
+                    <li>Commit to providing an educational and research environment based on inclusivity and gender
+                      equality for all students.</li>
+                    <li>Does not discriminate between female and male employees in human resources processes, adopts the
+                      principles of equal pay for equal work and transparency, and commits to supporting all employees
+                      in their career development.</li>
+                    <li>Supports overcoming the glass ceiling for women and supports women's leadership in management.
+                    </li>
+                    <li>Encourages applications from all stakeholders in areas where women are not adequately
+                      represented. Provides counseling/mentoring support for this purpose.</li>
+                    <li>Supports employees and students in achieving work-life balance and fulfilling their parenting
+                      responsibilities.</li>
+                    <li>Does not tolerate any form of violence, sexual harassment, assault, or bullying. Commits to
+                      investigating and intervening in any reported or observed physical, emotional, verbal, or
+                      non-verbal behavior towards any stakeholder. Establishes reporting/feedback mechanisms and ensures
+                      that the reporting party is not subjected to any discrimination and is protected.</li>
+                    <li>Uses language in all communication activities and all communication tools that strengthen
+                      equality and inclusivity, and makes efforts for this language to be adopted by all stakeholders.
+                      Provides basic awareness to all stakeholders by implementing education and development programs
+                      for this purpose.</li>
+                    <li>Collaborates with civil society organizations, universities, public and private sectors for the
+                      development of gender equality in society.</li>
+                    <h2 class="mt-3">Sustainability and Sustainable Eco-Campus Policy</h2>
+                    <li>Acknowledges that SKA (Sustainability and Sustainable Eco-Campus) guides our activities in
+                      education-teaching, research-development, community service, and all managerial processes.</li>
+                    <li>Commits to making all activities compatible with the principle of sustainability within the
+                      framework of SKA under the leadership of the top management and with a participatory approach.
+                    </li>
+                    <li>Commits to raising awareness within the scope of SKA, carrying out activities for the adoption
+                      of these purposes by all stakeholders, sharing its efforts with the community, and collaborating
+                      with universities, the public and private sectors, and relevant civil society organizations in
+                      this regard.</li>
+                    <li>Commits to providing a sustainable, inclusive, and gender equality-based working,
+                      education-teaching, and research environment for its academic and administrative staff, students,
+                      and stakeholders.</li>
+                    <li>Commits to guiding and supporting its academic and administrative staff, students, and
+                      stakeholders in the areas related to SKA in their academic and social development.</li>
+                    <li>Commits to encouraging the studies, guidance, and applications of its academic and
+                      administrative staff, students, and stakeholders in the fields related to SKA and providing
+                      counseling/mentoring support for this purpose.</li>
+                    <li>Commits to using a language compatible with SKA in all activities and all communication tools
+                      and making efforts for this language to be adopted by all stakeholders.</li>
+              </ul>
+          </section>
+          </article>
         </div>
-      </main>
+        </section>
     </div>
+  </div>
+  </section>
+  </div>
+  </div>
+  </main>
+  </div>
   </div>
   <footer class="fixed-bottom">
     <div class="container">
@@ -138,4 +329,5 @@
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
 </body>
+
 </html>
