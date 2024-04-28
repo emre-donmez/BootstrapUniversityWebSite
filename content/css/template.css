@@ -1,9 +1,5 @@
  :root {
-   --header-height: 15vh;
-   --main-height: 89vh;
-   --bg-color: #ffffff;
-   --main-text-color: #000000d2;
-   --secondary-text-color: #911d0e;
+   --main-template-color: #911d0e;
  }
 
  body {
@@ -11,45 +7,45 @@
 }
 
  header {
-   background-color: var(--bg-color);
-   color: var(--main-text-color);
-   height: var(--header-height);
-   border-bottom-color: var(--secondary-text-color);
+   background-color: white;
+   color: black;
+   height: 15vh;
+   border-bottom-color: var(--main-template-color);
    border-bottom-style: solid;
    display: flex;
    position: sticky;
    justify-content: center;
    align-items: center;
-   padding: 8vh 0;
+   padding: 50px 0;
  }
 
  #menu-icon {
-   fill: var(--main-text-color);
+   fill: black;
    transition: color 0.2s, transform 0.2s, opacity 0.2s;
 
  }
 
  #menu-icon:hover {
-   fill: var(--secondary-text-color);
+   fill: var(--main-template-color);
    transform: scale(1.2);
    opacity: 0.9;
  }
 
  .navbar {
-   background-color: var(--bg-color);
-   color: var(--main-text-color);
+   background-color: white;
+   color: black;
    height: var(--main-height);
    position: sticky;
-   top: var(--header-height);
+   top: 15vh;
  }
 
  .nav-link {
-   color: var(--main-text-color);
+   color: black;
    transition: color 0.2s, transform 0.2s, opacity 0.2s;
  }
 
  .nav-link:hover {
-   color: var(--secondary-text-color) !important;
+   color: var(--main-template-color) !important;
    transform: scale(1.1);
    opacity: 0.9;
  }
@@ -60,11 +56,11 @@
  }
 
  .social-icon {
-   color: var(--secondary-text-color);
+   color: var(--main-template-color);
  }
 
  .nav-active {
-   color: var(--secondary-text-color) !important;
+   color: var(--main-template-color) !important;
    transform: scale(1.1) !important;
  }
 
@@ -72,21 +68,15 @@
    box-shadow: none;
  }
 
- #nav-main-container {
-   height: var(--main-height);
-   position: absolute;
-   top: var(--header-height);
- }
-
  footer {
    position: relative !important;
    bottom: 0;
    width: 100%;
-   background-color: var(--bg-color);
-   color: var(--main-text-color);
+   background-color: white;
+   color: black;
    padding: 20px 0;
    border-top-style: solid;
-   border-top-color: var(--secondary-text-color);
+   border-top-color: var(--main-template-color);
    margin-top: 2vh;
  }
 
@@ -95,7 +85,8 @@
  }
 
  #university-logo {
-   max-height: calc(var(--header-height) - 2vh);
+   height: 15vh;
+   
    max-width: 100%;
  }
 
@@ -125,7 +116,7 @@
 
    header {
      padding: 0 0 !important;
-     height: calc(var(--header-height) * 2 / 3);
+     height: 10vh;
    }
 
    #nav-main-container {

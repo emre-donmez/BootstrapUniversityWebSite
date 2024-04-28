@@ -1,7 +1,3 @@
-:root {
-    --main-color: #911d0e;
-}
-
 .container {
     max-width: 800px;
     margin: 0 auto;
@@ -9,7 +5,7 @@
 }
 
 #documents-title{
-    color: var(--main-color);
+    color: var(--main-template-color);
 }
 
 .document-list {
@@ -31,7 +27,7 @@
 
 .document-list>li::before {
     content: "•";
-    color: var(--main-color);
+    color: var(--main-template-color);
     display: inline-block;
     width: 1em;
     margin-left: -1em;

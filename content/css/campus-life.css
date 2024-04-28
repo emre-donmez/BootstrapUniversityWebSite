@@ -4,6 +4,6 @@
     }
   }
   #video-title{
-    color: #911d0e;
+    color: var(--main-template-color);
     font-weight: 350;
   }

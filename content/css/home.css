@@ -1,8 +1,3 @@
-:root {
-  --text-color: #911d0e;
-}
-
-
 .carousel-item img {
   height: auto !important;
   width: 100%;
@@ -25,7 +20,7 @@
 
 .card-title {
   font-size: 1.2rem;
-  color: var(--text-color);
+  color: var(--main-template-color);
 }
 
 .card-text {
@@ -39,11 +34,11 @@
 }
 
 #announcement-title {
-  color: var(--text-color);
+  color: var(--main-template-color);
 }
 
 .card-title a {
-  color: var(--text-color);
+  color: var(--main-template-color);
   text-decoration: none;
 }
 
