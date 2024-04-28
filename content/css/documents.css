@@ -1,0 +1,38 @@
+:root {
+    --main-color: #911d0e;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#documents-title{
+    color: var(--main-color);
+}
+
+.document-list {
+    padding: 0;
+}
+
+.document-list>li {
+    margin-bottom: 10px;
+    list-style: none;
+}
+
+.document-list>li>a {
+    text-decoration: none;
+}
+
+.document-list>li>a:hover {
+    text-decoration: underline;
+}
+
+.document-list>li::before {
+    content: "•";
+    color: var(--main-color);
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
