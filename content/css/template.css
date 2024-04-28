@@ -3,8 +3,8 @@
  }
 
  body {
-  font-family: Arial, sans-serif;
-}
+   font-family: Arial, sans-serif;
+ }
 
  header {
    background-color: white;
@@ -34,7 +34,7 @@
  .navbar {
    background-color: white;
    color: black;
-   height: var(--main-height);
+   height: 89vh;
    position: sticky;
    top: 15vh;
  }
@@ -86,7 +86,6 @@
 
  #university-logo {
    height: 15vh;
-   
    max-width: 100%;
  }
 
