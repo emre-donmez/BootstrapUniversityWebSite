@@ -84,6 +84,10 @@
   color: var(--main-text-color);
   padding: 20px 0;  
  }
+
+ #side-nav > ul > li.nav-item.student-item > div {
+  margin-left: 1vh;
+ }
  
  @keyframes show-submenu {
   from {
