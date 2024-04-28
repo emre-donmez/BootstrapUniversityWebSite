@@ -6,6 +6,10 @@
    --secondary-text-color: #911d0e;
  }
 
+ body {
+  font-family: Arial, sans-serif;
+}
+
  header {
    background-color: var(--bg-color);
    color: var(--main-text-color);
@@ -16,18 +20,16 @@
    position: sticky;
    justify-content: center;
    align-items: center;
-   padding: 1vh 0 0 1vh;
+   padding: 8vh 0;
  }
 
- svg {
+ #menu-icon {
    fill: var(--main-text-color);
- }
-
- svg {
    transition: color 0.2s, transform 0.2s, opacity 0.2s;
+
  }
 
- svg:hover {
+ #menu-icon:hover {
    fill: var(--secondary-text-color);
    transform: scale(1.2);
    opacity: 0.9;
@@ -77,29 +79,37 @@
  }
 
  footer {
-  position: relative !important;
-  bottom: 0;
-  width: 100%;
-  background-color: var(--bg-color);
-  color: var(--main-text-color);
-  padding: 20px 0;  
+   position: relative !important;
+   bottom: 0;
+   width: 100%;
+   background-color: var(--bg-color);
+   color: var(--main-text-color);
+   padding: 20px 0;
+   border-top-style: solid;
+   border-top-color: var(--secondary-text-color);
+   margin-top: 2vh;
  }
 
- #side-nav > ul > li.nav-item.student-item > div {
-  margin-left: 1vh;
+ #side-nav>ul>li.nav-item.student-item>div {
+   margin-left: 1vh;
  }
- 
+
+ #university-logo {
+   max-height: calc(var(--header-height) - 2vh);
+   max-width: 100%;
+ }
+
  @keyframes show-submenu {
-  from {
-    opacity: 0;
-    transform: translateY(-3.5vh);
-  }
+   from {
+     opacity: 0;
+     transform: translateY(-3.5vh);
+   }
 
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
+   to {
+     opacity: 1;
+     transform: translateY(0);
+   }
+ }
 
  @media (max-width: 767px) {
    .navbar {
@@ -114,7 +124,8 @@
    }
 
    header {
-     padding-top: 2vh;
+     padding: 0 0 !important;
+     height: calc(var(--header-height) * 2 / 3);
    }
 
    #nav-main-container {
