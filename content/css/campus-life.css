@@ -1,9 +1,16 @@
+.embed-responsive-item {
+  width: 100%;
+  height: 500px;
+  border: 0;
+}
+
 @media (max-width: 575.98px) {
-    .embed-responsive-16by9 iframe {
-      height: 100%;
-    }
+  .embed-responsive-16by9 iframe {
+    height: 100%;
   }
-  #video-title{
-    color: var(--main-template-color);
-    font-weight: 350;
-  }
+}
+
+#video-title {
+  color: var(--main-template-color);
+  font-weight: 350;
+}
