@@ -1,0 +1,11 @@
+.table-link {
+    text-decoration: none;
+}
+
+.table-link:hover {
+    text-decoration: underline;
+}
+
+.table-title{
+    color: var(--main-template-color) !important;
+}

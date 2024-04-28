@@ -22,7 +22,6 @@
  #menu-icon {
    fill: black;
    transition: color 0.2s, transform 0.2s, opacity 0.2s;
-
  }
 
  #menu-icon:hover {

@@ -4,6 +4,7 @@
 
 #about-us-title {
   margin-left: -1.8vh;
+  color: var(--main-template-color);
 }
 
 .transparent-hover {
@@ -27,10 +28,10 @@
   margin-bottom: 30px;
 }
 
-#program-info-section h2, #student-info-section h2, #other-info-section h2 {
+#program-info-section h3, #student-info-section h3, #other-info-section h3 {
   color: var(--main-template-color);
-  font-weight: bold;
-  margin-bottom: 20px;
+  font-weight: 500;
+  margin-bottom: 20px !important;
 }
 
 .info-row {
@@ -98,7 +99,7 @@ article section:last-of-type {
   visibility: hidden;
 }
 
-section {
+.article-section {
   -webkit-transition: .125s linear;
   -moz-transition: .125s linear;
   -ms-transition: .125s linear;
