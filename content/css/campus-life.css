@@ -1,0 +1,9 @@
+@media (max-width: 575.98px) {
+    .embed-responsive-16by9 iframe {
+      height: 100%;
+    }
+  }
+  #video-title{
+    color: #911d0e;
+    font-weight: 350;
+  }
