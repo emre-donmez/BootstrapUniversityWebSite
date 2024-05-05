@@ -129,4 +129,8 @@
      transform: scale(1.4);
      text-align: center;
    }
+
+   .student-item .d-none {
+    display: block !important;
+  }
  }
